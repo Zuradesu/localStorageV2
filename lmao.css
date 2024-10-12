@@ -1,0 +1,74 @@
+body {
+    background-color: rgba(0, 0, 0, 0.952);
+    font-family: "Afacad Flux", Arial, Helvetica, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.img-box {
+    height: 800px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-box {
+    padding-inline: 10em;
+  }
+  
+  .title {
+    font-size: 5em;
+    max-width: max-content;
+    margin-block-end: 0.25em;
+  }
+  
+  .text {
+    opacity: 0.8;
+    line-height: 2;
+  }
+
+  .rawr {
+    background-color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: rgb(4, 4, 44);
+    font-size: 12px;
+  }
+
+  .rawr:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+  }
+  /* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack items vertically on smaller screens */
+    .container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    /* Adjust padding for mobile */
+    .content-box {
+      padding-inline: 2em; /* Reduce padding for mobile */
+    }
+  
+    /* Adjust title font size for mobile */
+    .title {
+      font-size: 3em; /* Smaller title size for mobile */
+    }
+  
+    /* Adjust height of image boxes for mobile */
+    .img-box {
+      height: 400px; /* Reduce image box height for mobile */
+    }
+  }
